@@ -1,0 +1,12 @@
+risk_categories:
+  low: [0.0, 0.2]
+  medium: [0.2, 0.5]
+  high: [0.5, 1.0]
+decision_policy:
+  version: "1.0"
+  low: approve_consideration
+  medium: manual_review
+  high: reject_consideration
+model_selection:
+  primary_metric: pr_auc
+  min_recall: 0.6
